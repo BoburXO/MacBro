@@ -1,0 +1,42 @@
+/* FT code start */
+
+.sect1__h1 {
+    text-align: center;
+}
+
+.sect1__otadiv {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);   
+    row-gap: 21px;
+}
+
+.sect1__otadiv__card {
+    background: #ffffff;
+    border-radius: 20px;
+    border: none;
+    width: 270px;
+    height: 240px;
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.sect1__otadiv__card__h4 {
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 20px;
+    background: #ffffff;
+}
+
+.sect1__otadiv__card__img1 {
+    background: #ffffff;
+    text-align: center;
+}
+
+.sect1__otadiv__card__img {
+    text-align: center;
+    width: 80%;
+}
+
+/* FT code end */
