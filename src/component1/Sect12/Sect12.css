@@ -1,0 +1,28 @@
+.hr {
+    background: #ffffff;
+}
+
+.hr__text {
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-between;
+    background: #ffffff;
+}
+
+.hr__text h6,  .hr__text h6 a{
+    background: #ffffff;
+}
+
+.hr__text h6 a {
+    text-decoration: none;
+    color: rgb(34, 34, 34);
+}
+
+.container1 {
+    width: 79%;
+    margin: auto;
+}
+
+.container1 {
+    background: #ffffff;
+}

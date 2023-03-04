@@ -1,0 +1,19 @@
+.asid1__btnla {
+    height: 65px;
+    display: flex;
+    background: #edeef0 ;
+}
+
+.asid1__btnla button {
+    background: #edeef0;
+    width: 100%;
+    border: none;
+}
+
+.asid1__btnla__activ {
+    margin-top: 5px;
+    margin-left: 10px;
+    background: #ffffff !important;
+    border-radius: 10px;
+    height: 55px;
+}

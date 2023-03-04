@@ -1,0 +1,425 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: San-Francisco, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+nav {
+    top: 0;
+    background: #1d1d1d;
+    justify-content: space-between;
+    padding: 20px 0;
+    position: sticky;
+    width: 100%;
+    z-index: 1;
+
+    .nav__block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 6px;
+
+        .nav__bars {
+            display: none;
+
+            button {
+                color: #f5f5f5f7;
+                background: none;
+                border: none;
+            }
+
+            .EZDrawer {
+                .bla {
+                    top: 35px !important;
+                    height: 100% !important;
+                    background: #2A2A2A;
+                }
+
+                .EZDrawer__overlay {
+                    opacity: 0 !important;
+                }
+            }
+        }
+
+        .nav__left {
+            h1 {
+                color: #f5f5f5f7;
+                font-weight: 300;
+                font-size: 20px;
+                margin: 0;
+            }
+        }
+
+        .nav__center {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            p {
+                font-size: 16px;
+                color: #f5f5f5f7;
+                margin: 0;
+            }
+
+            a {
+                text-decoration: none;
+                color: #f5f5f5f7;
+            }
+
+            .nav__dropdown {
+                button {
+                    background: none;
+                    color: #f5f5f5f7;
+                    border: none;
+                    font-size: 16px;
+                    display: flex;
+                    align-items: center;
+                }
+
+                ul {
+                    position: absolute;
+                    padding-top: 1.4%;
+
+
+                    li {
+                        color: #f5f5f5f7;
+                        background: #2d2d2d;
+                        padding: 10px 20px;
+                        margin-left: -20px;
+
+                    }
+
+                    li:hover {
+                        background: #404040;
+                    }
+                }
+            }
+        }
+
+        .nav__right {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            p,
+            i {
+                color: #f5f5f5f7;
+            }
+
+            label {
+                display: flex;
+                align-items: center;
+                position: relative;
+
+                i {
+                    position: absolute;
+                    right: 10px;
+                }
+
+                input {
+                    background: #2A2A2A;
+                    width: 7.5rem;
+                    height: 1.5rem;
+                    outline: none;
+                    border: none;
+                    color: #f5f5f5f7;
+                    padding: 10px;
+                }
+
+                .rows {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    position: fixed;
+                    left: 0;
+                    top: 4rem;
+                    margin: 0;
+                    padding: 0;
+                    right: 0;
+                    bottom: 0;
+                    overflow-y: auto;
+                    overflow-x: hidden;
+                    width: 100%;
+
+                    .row {
+                        padding-left: 100px;
+                        background: rgba(29, 29, 29, .95);
+                        width: 100%;
+                    }
+
+                    .card__search {
+                        width: 200px;
+                        cursor: pointer;
+                        padding: 5px;
+                        border-radius: 8px;
+                        border: 1px solid #fff;
+                        align-items: center;
+                        background-color: #fff;
+                        margin-top: 1rem;
+                        display: flex;
+                        align-items: center;
+                        gap: 1rem;
+
+                        img {
+                            width: 50px;
+                            height: 50px;
+                        }
+
+                        h2 {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+
+            p {
+                font-size: 15px;
+                line-height: 10px;
+                margin: 0;
+
+                span {
+                    font-size: 10px;
+                }
+            }
+
+            button {
+                background: none;
+                color: #f5f5f5f7;
+                border: none;
+                font-size: 16px;
+            }
+
+            ul {
+                position: absolute;
+                padding-top: 1.4%;
+
+                li {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: -20px;
+                    background: #2d2d2d;
+                    padding: 10px 20px;
+                    color: #f5f5f5f7;
+                }
+
+                li:hover {
+                    background: #404040;
+                }
+            }
+        }
+    }
+}
+
+// media 1-qism
+@media all and (max-width: 1024px) {
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+
+    nav {
+        padding: 10px 0;
+
+        .nav__block {
+            gap: 0rem;
+
+            .nav__left {
+                h1 {
+                    font-size: 15px;
+                }
+            }
+
+            .nav__center {
+                gap: 0.5rem;
+
+                p {
+                    font-size: 11px;
+                }
+
+                .nav__dropdown {
+                    button {
+                        font-size: 11px;
+                        display: flex;
+                    }
+
+                    ul {
+                        padding-top: 1.4%;
+
+
+                        li {
+                            margin-left: -10%;
+                            padding: 10px;
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }
+
+            .nav__right {
+                padding-top: 5px;
+
+                p {
+                    font-size: 10px;
+                    line-height: 5px;
+
+                    span {
+                        font-size: 5px;
+                    }
+                }
+
+                i {
+                    font-size: 11px;
+                }
+
+                button {
+                    font-size: 11px;
+                }
+
+                ul {
+                    padding-top: 1%;
+
+                    li {
+                        margin-left: -10px;
+                        padding: 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 11px;
+                    }
+                }
+
+                label {
+                    .rows {
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+
+                        .row {
+                            padding-left: 50px;
+
+                            .card__search {
+                                width: 150px;
+                                display: flex;
+                                align-items: center;
+                                gap: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// media 2-qism
+@media all and (max-width: 932px) {
+    .container {
+        width: 95%;
+        margin: auto;
+    }
+
+    nav {
+        .nav__block {
+            .nav__bars {
+                display: block;
+
+                .EZDrawer {
+                    width: 95%;
+                    margin: auto;
+
+                    .bla {
+                        overflow-y: auto;
+                        overflow-x: hidden;
+
+                        .accardion__all {
+                            width: 90%;
+                            margin: auto;
+
+                            .accardion {
+                                border-bottom: 1px solid #434343;
+                                padding-bottom: 10px;
+                                margin: 10px 0;
+
+                                button {
+                                    position: relative;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+
+                                    svg {
+                                        position: absolute;
+                                        left: 785px;
+                                        top: 3px;
+                                        transform: rotate(0deg);
+                                        transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 10s;
+                                    }
+                                }
+
+                                ul {
+                                    border-bottom: none !important;
+                                    padding: 5px 20px;
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    color: #f5f5f5f7;
+
+                                    li {
+                                        padding-top: 10px;
+                                    }
+                                }
+                            }
+
+                            .accardion:active {
+                                svg {
+                                    transform: rotate(180deg);
+                                    transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .nav__left {
+                display: block;
+
+
+            }
+
+            .nav__center {
+                display: none;
+            }
+
+            .nav__right {
+                label {
+                    input {
+                        width: 200px;
+                    }
+
+                    .rows {
+                        top: 3rem;
+                        
+                        .row {
+                            background: rgba(29, 29, 29, .95);
+                           
+                        }
+                    }
+                }
+
+                .fa-heart,
+                .fa-right-to-bracket,
+                .rs-dropdown {
+                    display: none;
+                }
+            }
+        }
+    }
+}

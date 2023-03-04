@@ -1,0 +1,41 @@
+.header__otadiv{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.header__otadiv__div {
+    background: #ffffff;
+    border: 0.5px solid #d7d7d7;
+}
+
+.header__otadiv__div__img {
+    width: 80%;
+    transition: 0.5s;
+}
+
+.header__otadiv__div__img:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+.header__1 {
+    background: #ffffff;
+}
+
+.header__1 .container {
+    background: #ffffff;
+}
+
+.header__otadiv__div__text {
+    background: #ffffff;
+    text-align: center;
+}
+
+.header__otadiv__div__text h5, .header__otadiv__div__text h5 b  {
+    background: #ffffff;
+}
+
+.header__otadiv__div__img1 {
+    background: #ffffff;
+    text-align: center;
+}

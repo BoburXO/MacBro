@@ -1,0 +1,63 @@
+.head1__otadiv1 {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.head1__otadiv__div__img {
+    width: 100%;
+    mix-blend-mode:darken;
+}
+
+.head1__otadiv__text__h11 {
+    color: rgb(92, 92, 92);
+}
+.head1__otadiv__text__div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.kopy {
+color: rgb(63, 67, 183);}
+
+.kopy, .lik {
+    font-size: 25px;
+} 
+
+.head1__otadiv1__price__p {
+    font-size: 23px;
+    text-decoration: line-through   ;
+}
+
+.head1__otadiv__text__btn1 {
+    display: flex;
+    gap: 10px;
+}
+
+.btn1, .btn2 {
+    width: 100%;
+    height: 50px;
+    font-size: 17px;
+}
+
+.head1__otadiv__text__btn2 {
+    row-gap: 20px;
+}
+
+.head1__otadiv__text__btn2__btn, .head1__otadiv__text__btn2__btn1 {
+    width: 100%;
+    border: none;
+    height: 50px;
+    color: rgb(35, 37, 40);
+    background: #e9f0f9;
+    border-radius: 10px;
+}
+
+.head1__otadiv__text__btn2__btn2 {
+    width: 100%;
+    height: 50px;
+    color: #06c;
+    border-radius: 10px;
+    border: none;
+    background: #edeef0;
+}
