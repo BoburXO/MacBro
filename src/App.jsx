@@ -15,8 +15,9 @@ import Vacancy from './Pages/Vacancy/Vacancy';
 import Sell from './Pages/Sell/Sell';
 import Delivery from './Pages/Delivery/Delivery';
 import Contact from './Pages/Contact/Contact';
-import Suggestions from './Pages/Suggestions/Suggestions';
 import Esim from './Pages/Esim/Esim';
+import Bro_service from './Pages/Bro_service/Bro_service';
+import Promos_and_discounts from './Pages/Promos_and_discounts/Promos_and_discounts';
 // import from './Pages';
 
 
@@ -49,8 +50,9 @@ const App = () => {
         <Route path='/sell' element={<Sell />} />
         <Route path='/delivery' element={<Delivery />} />
         <Route path='/contact' element={<Contact />} />
-        <Route path='/suggestions' element={<Suggestions />} />
         <Route path='/esim' element={<Esim />} />
+        <Route path='/bro_service' element={<Bro_service />} />
+        <Route path='/promos_and_discounts' element={<Promos_and_discounts />} />
 
       </Routes>
     </>

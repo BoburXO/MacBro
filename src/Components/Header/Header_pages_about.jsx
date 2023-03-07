@@ -6,7 +6,6 @@ const Header_pages_about = () => {
             <header className="pages__about">
                 <div className="header__block">
                     <div className="top">
-                        <img src="https://macbro.uz/images/delivery2.jpg" alt="" />
                         <h1>О компании</h1>
                     </div>
                     <div className="container">

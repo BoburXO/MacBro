@@ -8,8 +8,17 @@
 }
 
 .container {
-    width: 80%;
+    width: 95% !important;
     margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #f5f5f5f7;
+}
+
+a:hover {
+    color: #f5f5f5f7;
 }
 
 nav {
@@ -86,14 +95,14 @@ nav {
 
                 ul {
                     position: absolute;
-                    padding-top: 1.4%;
+                    padding-top: 1.3%;
 
 
                     li {
                         color: #f5f5f5f7;
                         background: #2d2d2d;
                         padding: 10px 20px;
-                        margin-left: -20px;
+                        margin-left: -50px;
 
                     }
 
@@ -134,50 +143,55 @@ nav {
                     padding: 10px;
                 }
 
-                .rows {
-                    display: grid;
-                    grid-template-columns: repeat(4, 1fr);
-                    position: fixed;
-                    left: 0;
-                    top: 4rem;
-                    margin: 0;
-                    padding: 0;
-                    right: 0;
-                    bottom: 0;
-                    overflow-y: auto;
-                    overflow-x: hidden;
-                    width: 100%;
+            }
 
-                    .row {
-                        padding-left: 100px;
-                        background: rgba(29, 29, 29, .95);
-                        width: 100%;
+            .rows:focus {
+                display: none;
+            }
+
+            .rows {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                position: absolute;
+                z-index: 220;
+                top: 4rem;
+                bottom: 0;
+                overflow-y: none;
+                overflow-x: none;
+                left: 0;
+                width: 100%;
+
+                .row {
+                    padding: 20px 103.4px;
+                    background: rgba(29, 29, 29, .95);
+                    width: 100%;
+                }
+
+                .card__search {
+                    width: 200px;
+                    cursor: pointer;
+                    padding: 5px;
+                    border-radius: 8px;
+                    border: 1px solid #fff;
+                    align-items: center;
+                    background-color: #fff;
+                    margin-top: 1rem;
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+
+                    img {
+                        width: 50px;
+                        height: 50px;
                     }
 
-                    .card__search {
-                        width: 200px;
-                        cursor: pointer;
-                        padding: 5px;
-                        border-radius: 8px;
-                        border: 1px solid #fff;
-                        align-items: center;
-                        background-color: #fff;
-                        margin-top: 1rem;
-                        display: flex;
-                        align-items: center;
-                        gap: 1rem;
-
-                        img {
-                            width: 50px;
-                            height: 50px;
-                        }
-
-                        h2 {
-                            font-size: 10px;
-                        }
+                    h2 {
+                        font-size: 10px;
                     }
                 }
             }
+
+            ;
 
             p {
                 font-size: 15px;
@@ -198,13 +212,13 @@ nav {
 
             ul {
                 position: absolute;
-                padding-top: 1.4%;
+                padding-top: 1.3%;
 
                 li {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    margin-left: -20px;
+                    margin-left: -50px;
                     background: #2d2d2d;
                     padding: 10px 20px;
                     color: #f5f5f5f7;
@@ -296,20 +310,18 @@ nav {
                     }
                 }
 
-                label {
-                    .rows {
-                        display: grid;
-                        grid-template-columns: repeat(3, 1fr);
+                .rows {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
 
-                        .row {
-                            padding-left: 50px;
+                    .row {
+                        padding: 20px 66.5px;
 
-                            .card__search {
-                                width: 150px;
-                                display: flex;
-                                align-items: center;
-                                gap: 1rem;
-                            }
+                        .card__search {
+                            width: 150px;
+                            display: flex;
+                            align-items: center;
+                            gap: 1rem;
                         }
                     }
                 }
@@ -317,6 +329,7 @@ nav {
         }
     }
 }
+
 
 
 
@@ -399,18 +412,26 @@ nav {
             }
 
             .nav__right {
-                label {
-                    input {
-                        width: 200px;
-                    }
+                input {
+                    width: 200px;
+                }
 
-                    .rows {
-                        top: 3rem;
-                        
-                        .row {
-                            background: rgba(29, 29, 29, .95);
-                           
+                .rows {
+                    top: 3rem;
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    left: 0;
+                    gap: 0 !important;
+                    margin: 0;
+                    padding: 0;
+                    row-gap: 0 !important;
+
+                    .row {
+                        .card__search {
+                            width: 180px;
+                            margin-top: 0;
                         }
+
                     }
                 }
 
@@ -418,6 +439,36 @@ nav {
                 .fa-right-to-bracket,
                 .rs-dropdown {
                     display: none;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 768px) {
+    nav {
+        .nav__block {
+            .nav__right {
+                .rows {
+                    .row {
+                        padding: 10px 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 425px) {
+    nav {
+        .nav__block {
+            .nav__right {
+                .rows {
+                    display: grid!important;
+                    grid-template-columns: repeat(2, 1fr)!important;
+                    .card__search{
+                        width: 100px!important;
+                    }
                 }
             }
         }

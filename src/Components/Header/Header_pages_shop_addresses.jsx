@@ -10,9 +10,9 @@ const Header_pages_shop_addresses = () => {
                         <h1>Наши филиалы</h1>
                         <div className="card__all">
                             <ul className='top'>
-                                <li><i class="fa-solid fa-store"></i>Магазин</li>
-                                <li><i class="fa-solid fa-location-dot"></i>Адрес</li>
-                                <li><i class="fa-regular fa-clock"></i>Режим работы</li>
+                                <li><i className='fa-solid fa-store'></i>Магазин</li>
+                                <li><i className='fa-solid fa-location-dot'></i>Адрес</li>
+                                <li><i className='fa-regular fa-clock'></i>Режим работы</li>
                             </ul>
                             <ul>
                                 <li>MacBro (Паркентская)</li>
